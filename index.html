@@ -59,8 +59,15 @@
             <p class="error email"></p>
           </div>
 
-          <div>
+          <div class="password-container">
             <input type="password" placeholder="Password" id="password" />
+            <span class="eye-icon" id="togglePassword">
+              <img
+                src="images/eye-outline (1).svg"
+                id="eyeIcon"
+                alt="Show Password"
+              />
+            </span>
             <img
               src="images/icon-error.svg"
               alt="error icon"
@@ -78,6 +85,15 @@
       </section>
     </main>
     <!-- Link script file -->
+
     <script src="app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

@@ -186,3 +186,29 @@ button:hover {
   font-weight: 900;
   text-decoration: none;
 }
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.eye-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.error__icon {
+  display: none;
+}
+
+.error {
+  display: none;
+}
