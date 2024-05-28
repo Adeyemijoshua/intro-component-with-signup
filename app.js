@@ -85,7 +85,7 @@ function checkInputs() {
     // Change button text to "Submitted successfully"
     submitButton.textContent = "Submitted successfully";
 
-    // Reset form after 5 seconds
+    // Reset form after 0.5 seconds
     setTimeout(() => {
       form.reset();
       submitButton.textContent = "Claim your free trial";
