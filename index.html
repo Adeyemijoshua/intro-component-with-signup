@@ -2,9 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- displays site properly based on user's device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       type="image/png"
@@ -12,7 +10,6 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="styles.css" />
-
     <title>Frontend Mentor | Intro component with sign up form</title>
   </head>
   <body>
@@ -31,7 +28,7 @@
           <h2>Try it free 7 days <span>then $20/mo. thereafter</span></h2>
         </div>
         <form>
-          <div>
+          <div class="input-container">
             <input type="text" placeholder="First Name" id="first_name" />
             <img
               src="images/icon-error.svg"
@@ -40,7 +37,7 @@
             />
             <p class="error first_name"></p>
           </div>
-          <div>
+          <div class="input-container">
             <input type="text" placeholder="Last Name" id="last_name" />
             <img
               src="images/icon-error.svg"
@@ -49,7 +46,7 @@
             />
             <p class="error last_name"></p>
           </div>
-          <div>
+          <div class="input-container">
             <input type="email" placeholder="Email Address" id="email" />
             <img
               src="images/icon-error.svg"
@@ -58,8 +55,7 @@
             />
             <p class="error email"></p>
           </div>
-
-          <div class="password-container">
+          <div class="input-container password-container">
             <input type="password" placeholder="Password" id="password" />
             <span class="eye-icon" id="togglePassword">
               <img
@@ -73,10 +69,9 @@
               alt="error icon"
               class="error__icon password"
             />
-            <p class="error password"></p>
+            <p class="error password bt"></p>
           </div>
-          <button>Claim your free trial</button>
-
+          <button type="submit">Claim your free trial</button>
           <p class="terms">
             By clicking the button, you are agreeing to our
             <a href="#">Terms and Services</a>
@@ -84,16 +79,6 @@
         </form>
       </section>
     </main>
-    <!-- Link script file -->
-
     <script src="app.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>

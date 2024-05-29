@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -8,12 +9,9 @@
 }
 
 :root {
-  /* ### Primary */
   --red: hsl(0, 100%, 74%);
   --green: hsl(154, 59%, 51%);
-  /* ### Accent */
   --blue: hsl(248, 32%, 49%);
-  /* ### Neutral */
   --darkBlue: hsl(249, 10%, 26%);
   --grayishBlue: hsl(246, 25%, 77%);
 }
@@ -116,13 +114,14 @@ form {
   }
 }
 
-form > div {
+form > .input-container {
   position: relative;
+  height: 4rem; /* Set a height to accommodate input and error message */
 }
 
 input {
   width: 100%;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   font-size: 0.75rem;
   font-weight: 700;
   border-radius: 0.35rem;
@@ -143,20 +142,20 @@ input:focus {
   transform: translateY(-50%);
 }
 
-form > div:has(.error) > .error__icon {
-  top: 32%;
-}
-
 .error {
-  color: red;
+  color: var(--red);
   text-align: end;
   font-size: 0.75rem;
   font-weight: 500;
   font-style: italic;
   margin-top: 0.5rem;
-  transition: all 0.3s ease;
-}
+  position: absolute;
 
+  display: none;
+}
+.bt {
+  bottom: -1rem;
+}
 button {
   width: 100%;
   padding: 0.75rem 1rem;
@@ -175,6 +174,7 @@ button {
 button:hover {
   background-color: hsla(154, 59%, 51%, 0.7);
 }
+
 .terms {
   color: var(--grayishBlue);
   font-size: 0.625rem;
@@ -204,11 +204,11 @@ button:hover {
   width: 20px;
   height: 20px;
 }
-
 .error__icon {
   display: none;
-}
-
-.error {
-  display: none;
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 1;
 }
